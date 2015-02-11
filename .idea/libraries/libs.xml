@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gson-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ormlite-core-4.45.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-async-http-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ormlite-android-4.45.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
