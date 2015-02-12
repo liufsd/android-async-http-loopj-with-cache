@@ -19,9 +19,7 @@ public class HttpCacheEntity {
         this.json = _json;
         this.updateTime = System.currentTimeMillis();
     }
-    @DatabaseField(generatedId = true)
-    private Integer _id;
-    @DatabaseField(columnName = TARGET_URL)
+    @DatabaseField(id = true, columnName = TARGET_URL)
     private String url;
     @DatabaseField(dataType = DataType.BYTE_ARRAY)
     private byte[] json;
@@ -33,14 +31,6 @@ public class HttpCacheEntity {
 
     public void setUrl(String url) {
         this.url = url;
-    }
-
-    public Integer get_id() {
-        return _id;
-    }
-
-    public void set_id(Integer _id) {
-        this._id = _id;
     }
 
     public byte[]  getJson() {
@@ -60,6 +50,6 @@ public class HttpCacheEntity {
     }
     @Override
     public String toString() {
-        return "_id: " + _id + " url: " + url + " json: " + json;
+        return " url: " + url + " json: " + json;
     }
 }
